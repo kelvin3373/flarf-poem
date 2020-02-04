@@ -4,30 +4,41 @@ html {
 /*maybe add some mouse effects later */
 
 body {
-  width: 1200px;
-  margin: 25px auto;
-  background-color: #ffb5cc;  /*pink color*/
   padding: 0 20px 20px 20px;
   border: 5px solid black;
+  width: 1200px;
+  margin: 25px auto;
 }
 
-.leftpic{
-  margin: auto;
-  left: 0;
-  bottom: 0;
-  border: 1px black;
+body.page1{
+  background-color: #ffb5cc;  /*pink color*/
 }
+
+body.page2{
+  background-color: brown;  /*pink color*/
+}
+
+body.page3{
+
+}
+body.page4{}
+
 
 h1 {
-  font-size: 70px;
+  font-size: 40px;
   margin: 0 auto;
   margin-left: 20px;
   padding: 20px 0;
-  color: Darkblue;
 }
 
 p {
   margin-top: 1em ; /*em = font size*/
   margin-bottom: 1em ;
-  font-size: 60px;
+  /* font-size: 60px; */
+}
+
+#sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }

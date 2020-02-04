@@ -4,17 +4,38 @@
   <link rel="stylesheet" type="text/css" href="mystyle.css">
   <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
   <style>
+
+  body{
+      background-image: url('img/p1/keepcalm.png');
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-size: 20% 30%;
+      background-blend-mode: hue;
+  }
+
+    h1{
+      /*add font*/
+    }
+
     p {
       font-family: 'Rajdhani', sans-serif;
-      font-size: 480 px;
+      font-size: 70px;
+      color: #a12a06; /*white-red*/
     }
+
   </style>
 </head>
-<body>
+
+<body class="page1">
+
+<!-- <img src="img/p1/keepcalm.png" alt="keepcalm"> -->
+
+<img id="sticky" src="img/p1/dark.jpg" alt="dark" onclick="remove()">
 
 <center>
 <h1>  Trouble </h1>
 
+<img src="img/p1/familyguy.gif" alt="familyguy">
 <p>
 I've tried not looking at my feet<br>
 but am too scared to take more than a step<br>
@@ -26,8 +47,8 @@ What's the proper way?<br>
 </p>
 
 <p>
-I use an elevator<br>
-and say "I'm going downstairs to the first floor"<br>
+I use an elevator <br>
+and say "I'm going downstairs to the first floor" <br>
 </p>
 
 <p>
@@ -43,8 +64,12 @@ Don't tell Meg I told you<br>
 
 </body>
 
-<div class = "leftpic">
-  <img src="dark.jpg" alt="dark downstairs">
-</div>
+<script>
+function remove(){
+  document.getElementById("sticky").style.display='none';
+}
+</script>
+
+
 
 </html>
