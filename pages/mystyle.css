@@ -51,21 +51,41 @@ box-shadow: 0px 0px 100px #FF0000;
 }
 
 #top_right{
-  top:0;
-  right:0;
+  position: fixed;
+  top:0px;
+  right:0px;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 #top_left{
+  position: fixed;
   top:0;
   left:0;
+  width: 100px;
+  height: 100px;
 }
 
 #bot_right{
+  position: fixed;
   bottom:0;
   right:0;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 #bot_left{
+  position: fixed;
   bottom:0;
   left:0;
+  width: 100px;
+  height: 100px;
 }
