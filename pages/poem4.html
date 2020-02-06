@@ -47,7 +47,8 @@
 
 </style>
 
-<div id ="background" style="text-align: center; border: 5px solid black; margin-top:25px">
+<div id ="background" style="text-align: center; border: 5px solid black; margin-top:25px;
+background-color:#e6b3ff">
 
 <button class="tmr" type="button" onclick="tomorrow()" >
   Tomorrow
@@ -74,21 +75,25 @@
 
  Don't apologize,<br>
 
- Chicago just too cold<br>
+ just too cold here<br>
 </p>
 </center>
 
+<img id="showimg" src="img/p4/no.jpg" alt="tmr" style="display: block; margin-left: auto;
+margin-right: auto; opacity:0">
 
 </body>
 
 <script>
 function tomorrow(){
   document.getElementById("showtext").style.opacity = "0";
+  document.getElementById("showimg").style.opacity = "0";
   document.getElementById("background").style.backgroundImage = "url('img/p4/party.gif')";
 }
 
 function today(){
   document.getElementById("showtext").style.opacity = "1";
+  document.getElementById("showimg").style.opacity = "1";
   document.getElementById("background").style.backgroundImage = "url('img/p4/today.gif')";
 }
 
