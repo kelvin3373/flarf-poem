@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
+</head>
+<body class="page4">
+
+<style>
+  .tmr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  border: 10px solid black;
+  color: white;
+  font-size: 80px;
+  cursor: pointer;
+  }
+
+  .today{
+    width:45px;
+    height:45px;
+    background-color:green;
+    position:relative;
+    border:5px solid black;
+    color:white;
+    font-size:8px;
+    cursor:pointer;
+    animation-name:move;
+    -webkit-animation: move 10s infinite;
+    animation: move 10s infinite;
+  }
+
+  #background{
+    background-size: 30%;
+  }
+
+  p{
+    opacity:0;
+    font-size:30px;
+    font-family: 'PT Mono', monospace;
+    line-height:2em;
+  }
+
+
+</style>
+
+<div id ="background" style="text-align: center; border: 5px solid black; margin-top:25px">
+
+<button class="tmr" type="button" onclick="tomorrow()" >
+  Tomorrow
+</button>
+
+
+<button class="today" type="button" onclick="today()">
+  Today
+</button>
+</div>
+
+
+<center>
+<p id="showtext">
+ I don't have class tomorrow<br>
+
+ I don't have work tomorrow<br>
+
+ I will be sick tomorrow<br>
+
+ It is not ture.<br>
+
+ Sorry, I will be coming from tomorrow onwards!<br>
+
+ Don't apologize,<br>
+
+ Chicago just too cold<br>
+</p>
+</center>
+
+
+</body>
+
+<script>
+function tomorrow(){
+  document.getElementById("showtext").style.opacity = "0";
+  document.getElementById("background").style.backgroundImage = "url('img/p4/party.gif')";
+}
+
+function today(){
+  document.getElementById("showtext").style.opacity = "1";
+  document.getElementById("background").style.backgroundImage = "url('img/p4/today.gif')";
+}
+
+</script>
+
+</html>

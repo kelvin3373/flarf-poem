@@ -21,8 +21,9 @@ body.page2{
 body.page3{
   background-color:  #0086b3;
 }
-body.page4{}
-
+body.page4{
+  background-color: white;
+}
 
 h1 {
   font-size: 40px;
@@ -100,6 +101,14 @@ box-shadow: 0px 0px 100px #FF0000;
 @-webkit-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+@keyframes move{
+  0%   {left:0px; top:250px;}
+  25%  {left:-550px; top:250px;}
+  50%  {left:-550px; top:-300px;}
+  75%  {left:0px; top:-300px;}
+  100% {left:0px; top:250px;}
 }
 
 .glowing {
